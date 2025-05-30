@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ContactUs</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Contact - MicroWin</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
 
@@ -15,35 +16,48 @@
   <a href="aboutus.html" class="btn">Despre companie</a>
 </div>
 
-  <h1>Ai întrebări? </h1>
-  <h1>Suntem aici să te ajutăm!</h1>
-<p>Completează formularul sau contactează-ne direct — echipa MicroWin îți răspunde rapid și clar.</p>
+  <h1>Ai întrebări? Suntem aici să te ajutăm!</h1>
+  <div class="contact-info">
+    <div class="contact-item">
+      <h3>Email 📧</h3>
+      <a href="mailto:microwin@gmail.com">microwin@gmail.com</a>
+    </div>
+    <div class="contact-item">
+      <h3>Telefon ☎️</h3>
+      <a href="tel:+37369169169">+373 69 169 169</a>
+    </div>
+  </div>
+  <p>Completează formularul de mai jos 👇 - echipa MicroWin îți răspunde rapid și clar.</p>
 
- <div class="hero-image">
-      <img src="images/businessman-choosing-icon_218381-540.spg.avif" alt="Credit" class="interactive-image">
+  <form class="contact-form">
+    <div class="form-group">
+      <label for="nume">Nume 👤</label>
+      <input type="text" id="nume" name="nume" placeholder="Introdu numele tău">
     </div>
 
-    <form>
-  <label for="nume">NUME 👤</label>
-  <input type="text" id="nume" name="nume"> <br><br>
+    <div class="form-group">
+      <label for="prenume">Prenume 🧑</label>
+      <input type="text" id="prenume" name="prenume" placeholder="Introdu prenumele tău">
+    </div>
 
-  <label for="prenume">PRENUME 🧑</label>
-  <input type="text" id="prenume" name="prenume"> <br><br> 
+    <div class="form-group">
+      <label for="telefon">Număr de telefon 📞</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="Introdu numărul tău de telefon">
+    </div>
 
-  <label for="telefon">NUMĂR DE TELEFON 📞</label>
-  <input type="text" id="telefon" name="telefon"> <br><br>
+    <div class="form-group">
+      <label for="adresa">Domiciliu 🏠</label>
+      <input type="text" id="adresa" name="adresa" placeholder="Introdu adresa ta">
+    </div>
 
-  <label for="adresa">DOMICILIU 🏠</label>
-  <input type="text" id="adresa" name="adresa"> <br><br>
+    <div class="form-group">
+      <label for="job">Loc de muncă 🖥️</label>
+      <input type="text" id="job" name="job" placeholder="Introdu locul tău de muncă">
+    </div>
 
-  <label for="job">LOC DE MUNCĂ 🖥️</label>
-  <input type="text" id="job" name="job"> <br><br>
+    <button type="submit" class="submit-btn">Trimite 📩</button>
+  </form>
 
-  <input type="submit" value="Trimite 📩">
-</form>
-
-
-
-  <script src="script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
